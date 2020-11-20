@@ -19,7 +19,7 @@ clear:
 	find . -type d -name "__pycache__" -prune -exec rm -rf {} \;
 	find . -type d -name "migrations" -prune -exec rm -rf {} \;
 
-downup: clear down up admin
+downup: clear down up
 
 down:
 	docker-compose down

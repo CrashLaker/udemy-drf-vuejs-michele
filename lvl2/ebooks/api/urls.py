@@ -7,7 +7,7 @@ urlpatterns = [
          EbookListCreateAPIView.as_view(), 
          name='ebook-list'),
 
-    path('ebooks/<int:pk>', 
+    path('ebooks/<int:pk>/', 
          EbookDetailAPIView.as_view(), 
          name='ebook-detail'),
 
@@ -15,7 +15,7 @@ urlpatterns = [
          ReviewCreateAPIView.as_view(), 
          name='ebook-review'),
 
-    path('reviews/<int:pk>', 
+    path('reviews/<int:pk>/', 
          ReviewDetailAPIView.as_view(), 
          name='review-detail'),
 ]
